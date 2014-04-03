@@ -13,7 +13,8 @@ describe RestaurantsController do
     end
 
     context "resource doesn't exist" do
-      subject {get "restaurants/#{@restaurant.id +1}"}
+
+      subject {get "restaurants/#{@restaurant.id + 1}"}
       it {expect(subject).to redirect_to(:root)}
     end
   end

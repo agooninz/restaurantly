@@ -28,3 +28,4 @@ source 'https://rubygems.org'
   group :doc do
     gem 'sdoc', require: false
   end
+
